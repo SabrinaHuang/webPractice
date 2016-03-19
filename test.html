@@ -1,0 +1,33 @@
+// 声明文件类型
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  
+// 树根  
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+	<head >
+		// 关联css		
+		<link rel="stylesheet" type="text/css" href="mystyle.css" >
+		<meta http-equiv="content-type" content = "text/html;
+		charset=utf-8" />
+		<title>Shopping list</title>				
+	</head>
+	<body>
+		// 为元素指定节点
+		<h1 class="special" >What to buy</h1>
+		<p class = "special" title ="a gentle reminder">Don't forget to buy this stuff.</p>
+		<p> This is a test </p>
+		<ul id="purchases">
+			<li style="color:red" >A tin of beans</li>
+			<li>Cheess</li>
+			<li>Milk</li>
+		</ul>
+		<script type="text/javascript">
+			var items = document.getElementsByTagName("p");
+			for( var i = 0; i < items.length; i++ )
+			{
+				items[i].setAttribute("style", "color:green");
+			}	
+		</script>
+	</body>
+</html>
+

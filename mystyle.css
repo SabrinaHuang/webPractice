@@ -1,0 +1,9 @@
+.special{
+	font-style:italic;
+	color:blue;
+	background-color:black;
+}
+
+#purchases li{	
+	font-weight:bold;
+}
